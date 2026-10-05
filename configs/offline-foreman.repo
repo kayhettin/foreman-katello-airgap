@@ -1,0 +1,61 @@
+# Local Repository Mapping for Air-Gapped Installation[cite: 20, 24]
+[offline-baseos]
+name=Offline BaseOS
+baseurl=file:///var/lib/offline-repos/baseos
+enabled=1
+gpgcheck=0
+exclude=rocky-release* 
+
+[offline-appstream]
+name=Offline AppStream
+baseurl=file:///var/lib/offline-repos/appstream
+enabled=1
+gpgcheck=0
+
+[offline-candlepin]
+name=Offline Candlepin
+baseurl=file:///var/lib/offline-repos/candlepin
+enabled=1
+gpgcheck=0
+
+[offline-epel]
+name=Offline EPEL
+baseurl=file:///var/lib/offline-repos/epel
+enabled=1
+gpgcheck=0
+
+[offline-extras]
+name=Offline Extras
+baseurl=file:///var/lib/offline-repos/extras
+enabled=1
+gpgcheck=0
+
+[offline-foreman]
+name=Offline Foreman
+baseurl=file:///var/lib/offline-repos/foreman
+enabled=1
+gpgcheck=0
+
+[offline-foreman-plugins]
+name=Offline Foreman Plugins
+baseurl=file:///var/lib/offline-repos/foreman-plugins
+enabled=1
+gpgcheck=0
+
+[offline-katello]
+name=Offline Katello
+baseurl=file:///var/lib/offline-repos/katello
+enabled=1
+gpgcheck=0
+
+[offline-pulpcore]
+name=Offline Pulpcore
+baseurl=file:///var/lib/offline-repos/pulpcore
+enabled=1
+gpgcheck=0
+
+[offline-puppet]
+name=Offline Puppet
+baseurl=file:///var/lib/offline-repos/puppet
+enabled=1
+gpgcheck=0
