@@ -6,11 +6,11 @@ source ../configs/env.template
 EXPORT_TAR="/tmp/katello-content-export.tar"
 
 echo "Extracting Katello Content Export..."
-mkdir -p "${PULP_IMPORT_DIR}"[cite: 26]
-tar -xvf "${EXPORT_TAR}" -C "${PULP_IMPORT_DIR}/"[cite: 26]
+mkdir -p "${PULP_IMPORT_DIR}"
+tar -xvf "${EXPORT_TAR}" -C "${PULP_IMPORT_DIR}/"
 
 echo "Applying Pulp User Permissions..."
-chown -R pulp:pulp "${PULP_IMPORT_DIR}/"[cite: 26]
+chown -R pulp:pulp "${PULP_IMPORT_DIR}/"
 
 echo "Executing Hammer Import..."
 # Note: Directory path will dynamically change based on export timestamp, using wildcard match for latest
@@ -18,4 +18,4 @@ IMPORT_TARGET=$(find "${PULP_IMPORT_DIR}" -maxdepth 1 -type d -name "Default_Org
 
 hammer content-import library \
   --organization="${ORG_NAME}" \
-  --path="${IMPORT_TARGET}"[cite: 26]
+  --path="${IMPORT_TARGET}"
