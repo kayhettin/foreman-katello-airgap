@@ -1,4 +1,4 @@
-# Local Repository Mapping for Air-Gapped Installation[cite: 20, 24]
+# Local Repository Mapping for Air-Gapped Installation
 [offline-baseos]
 name=Offline BaseOS
 baseurl=file:///var/lib/offline-repos/baseos
