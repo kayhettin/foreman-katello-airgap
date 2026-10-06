@@ -7,7 +7,7 @@ The `STAGING_NODE` synchronizes strictly filtered RPMs and DEBs via Katello's un
 
 ## Prerequisites
 *   **Operating System:** Rocky Linux 9 Minimal.
-*   **System Requirements:** Minimum 20GB RAM, 4 vCPUs, 120GB storage block. 
+*   **System Requirements:** Minimum 20GB RAM, 4 vCPUs, 512GB storage block. For a full mirror of both .deb and .rpms, 1TB is recommended.
 *   **User Privileges:** All installation scripts strictly require a `root` user session. Do not prefix standard users with `sudo` during the core install phase, as `dnf` cache mappings will fail.
 
 ## Deployment Instructions
